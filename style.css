@@ -66,10 +66,79 @@ h1 {
     box-shadow: 0 4px 12px rgba(255, 167, 5, 0.3);
 }
 
-
+/* for the show and hide function */
 [hidden] {
     display:none !important;
 }
 
 
- 
+ /*categories section */
+
+ #categories {
+    display: flex;
+    align-content: center;
+    background-color: rgb(210, 191, 144);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+ }
+ #logo-left {
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(255, 167, 5, 0.3);
+ }
+
+ #h-categories {
+    color: rgb(200, 125, 0);
+ }
+
+ #category-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    gap:5px;
+    align-content: center;
+ }
+
+
+#category-topbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 8px;
+}
+
+.category-btn {
+    width: 21%;
+    height: 70%;
+    box-shadow: 0 4px 12px rgba(255, 167, 5, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;  
+    border: none;
+    transition: 0.3s ease;
+}
+.category-images {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+#category-label {
+    display: flex;
+    margin: 0 auto;
+    gap: 13rem;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2rem;
+    color:  rgb(34, 33, 33);
+}
+.category-btn:hover {
+    transform: translateY(-2px);    
+}
