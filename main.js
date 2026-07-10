@@ -165,3 +165,9 @@ addToOrderBtn.forEach(button => {
         showSection("categories");
     })
 })
+
+let cancelBtn = document.querySelector("#cancelBtn");
+
+cancelBtn.addEventListener("click" , ()=> {
+    showSection("welcome");
+})

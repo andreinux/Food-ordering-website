@@ -333,3 +333,27 @@ h3 {
 .add-to-orderBtn:active {
     transform: scale(0.97);
 }
+
+#cancelBtn {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(237, 169, 42);
+    box-shadow: 0 8px 24px rgba(249, 174, 35, 0.4);
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+#cancelBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+#cancelBtn:active {
+    transform: scale(0.97);
+}
+
