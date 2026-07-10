@@ -52,6 +52,22 @@ let backtoMenuBtn = document.querySelectorAll(".backto-menubtn");
 
 backtoMenuBtn.forEach(button=> {
     button.addEventListener("click" , ()=> {
-        showSection("categories");
+        showSection("categories");  
     })
 })
+
+
+let CBdisplayquantity = document.querySelector("#cheeseBurger-quantity");
+let cheeseBurgerItembtn = document.querySelector("#cheeseBurger-itembtn");
+ let cheeseBurgerQuantity = Number(CBdisplayquantity.textContent);
+
+cheeseBurgerItembtn.addEventListener("click" , ()=> {
+    cheeseBurgerQuantity += 1;
+    CBdisplayquantity.textContent = cheeseBurgerQuantity;
+
+})
+
+
+
+
+

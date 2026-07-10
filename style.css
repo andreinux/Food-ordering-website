@@ -139,8 +139,8 @@ h1 {
 }
 
 .category-btn {
-    width: 21%;
-    height: 70%;
+    width: 250px;
+    height: 300px;
     box-shadow: 0 4px 12px rgba(255, 167, 5, 0.3);
     border-radius: 10px;
     margin: 0 auto;  
@@ -284,5 +284,25 @@ h3 {
 }
 #matcha-image {
     height: 200px;
+}
+
+.item-btn-container {
+    width: 260px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.item-quantity-counter {
+    background-color: rgb(243, 231, 231);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
 }
 
