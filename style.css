@@ -113,6 +113,30 @@ h1 {
     width: 100%;
     margin-left: 8px;
 }
+.backto-menubtn {
+    background-color: rgb(196, 22, 22);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 59px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1000px;
+    align-self: center;
+    box-shadow: 0 5px 15px rgba(196, 22, 22, 0.3);
+    transition: 0.3s ease;
+}
+.backto-menubtn:hover {
+     opacity: 0.9;
+}
+.backto-menubtn:active {
+    transform: scale(0.97);
+}
+
+#hotdog-backbtn {
+    margin-left: 700px;
+}
 
 .category-btn {
     width: 21%;
@@ -261,3 +285,4 @@ h3 {
 #matcha-image {
     height: 200px;
 }
+

@@ -46,3 +46,12 @@ let drinksBtn = document.querySelector("#drinks-btn");
 drinksBtn.addEventListener("click", ()=> {
     showSection("drinksSection");
 })
+
+
+let backtoMenuBtn = document.querySelectorAll(".backto-menubtn");
+
+backtoMenuBtn.forEach(button=> {
+    button.addEventListener("click" , ()=> {
+        showSection("categories");
+    })
+})
