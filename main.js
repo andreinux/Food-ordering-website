@@ -56,106 +56,157 @@ backtoMenuBtn.forEach(button=> {
     })
 })
 
+//objects for each item
 
+let cheeseBurgerObj = {
+    item: "CheeseBurger",
+    price:30,
+    quantity: 0,
+}
+
+let martiniObj ={
+    item: "Martini Burger",
+    price:50,
+    quantity: 0,
+}
+
+let hotdogObj ={
+    item: "Cheesy Hotdog",
+    price:39,
+    quantity: 0,
+}
+let footLongObj ={
+    item: "Footlong",
+    price:49,
+    quantity: 0,
+}
+
+let SfriesObj ={
+    item: "Fries Small",
+    price:30,
+    quantity: 0,
+}
+let LfriesObj ={
+    item: "Fries Large",
+    price:50,
+    quantity: 0,
+}
+let teaObj ={
+    item: "Iced Tea",
+    price:25,
+    quantity: 0,
+}
+
+let mochaObj ={
+    item: "Iced Mocha Latte",
+    price:79,
+    quantity: 0,
+}
+
+let taroObj ={
+    item: "Taro Milk Tea",
+    price:79,
+    quantity: 0,
+}
+
+let matchaObj ={
+    item: "Matcha",
+    price:79,
+    quantity: 0,
+}
+
+//item button hnadlers
 let CBdisplayquantity = document.querySelector("#cheeseBurger-quantity");
 let cheeseBurgerItembtn = document.querySelector("#cheeseBurger-itembtn");
- let cheeseBurgerQuantity = Number(CBdisplayquantity.textContent);
+ 
 
 cheeseBurgerItembtn.addEventListener("click" , ()=> {
-    cheeseBurgerQuantity += 1;
-    CBdisplayquantity.textContent = cheeseBurgerQuantity;
-
+    
+    cheeseBurgerObj.quantity += 1;
+    CBdisplayquantity.textContent = cheeseBurgerObj.quantity;
 })
 
 
 
 let martiniDisplayQuantity = document.querySelector("#martini-quantity");
 let martiniItembtn = document.querySelector("#martini-itembtn");
-let martiniQuantity = Number(martiniDisplayQuantity.textContent);
 
 martiniItembtn.addEventListener("click", ()=> {
-    martiniQuantity += 1;
-    martiniDisplayQuantity.textContent = martiniQuantity;
+    martiniObj.quantity += 1;
+    martiniDisplayQuantity.textContent = martiniObj.quantity;
 })
 
 let hdDisplayquantity = document.querySelector("#hotdog-quantity");
 let hotdogItembtn = document.querySelector("#hotdog-itembtn");
-let hotdogQuantity = Number(hdDisplayquantity.textContent);
 
 hotdogItembtn.addEventListener("click", ()=> {
-    hotdogQuantity += 1;
-    hdDisplayquantity.textContent = hotdogQuantity;
+    hotdogObj.quantity +=1;
+    hdDisplayquantity.textContent = hotdogObj.quantity;
 })
 
 
 let flDisplayQuantity = document.querySelector("#footlong-quantity");
 let footlongItembtn = document.querySelector("#footlong");
-let flQuantity = Number(flDisplayQuantity.textContent);
 
 footlongItembtn.addEventListener("click" ,()=> {
-    flQuantity += 1;
-    flDisplayQuantity.textContent = flQuantity; 
+    footLongObj.quantity += 1;
+    flDisplayQuantity.textContent = footLongObj.quantity; 
 })
 
 let SfriesDisplayQuantity = document.querySelector("#Sfries-quantity");
 let SfriesItembtn = document.querySelector("#friesSmall-itembtn");
-let SfriesQuantity = Number(SfriesDisplayQuantity.textContent);
+
 
 SfriesItembtn.addEventListener("click", ()=> {
-    SfriesQuantity += 1;
-    SfriesDisplayQuantity.textContent = SfriesQuantity;
+    SfriesObj.quantity += 1;
+    SfriesDisplayQuantity.textContent = SfriesObj.quantity;
 })
 
 
 let LfriesDisplayQuantity = document.querySelector("#Lfries-quantity");
 let LfriesItembtn = document.querySelector("#friesLarge-itembtn");
-let LfriesQuantity = Number(LfriesDisplayQuantity.textContent);
 
 LfriesItembtn.addEventListener("click", ()=> {
-    LfriesQuantity += 1;
-    LfriesDisplayQuantity.textContent = LfriesQuantity;
+    SfriesObj.quantity += 1;
+    LfriesDisplayQuantity.textContent = SfriesObj.quantity;
 })
 
 
 
 let itDisplayQuantity = document.querySelector("#icedTea-quantity");
 let icedteaItembtn = document.querySelector("#icedtea-itembtn");
-let itQuantity = Number(itDisplayQuantity.textContent);
 
 icedteaItembtn.addEventListener("click", ()=> {
-    itQuantity += 1;
-    itDisplayQuantity.textContent = itQuantity;
+    teaObj.quantity += 1;
+    itDisplayQuantity.textContent = teaObj.quantity;
 }) 
 
 
 
 let mochaDisplayQuantity = document.querySelector("#mocha-quantity");
 let mochaItembtn = document.querySelector("#mocha-itembtn");
-let mochaQuantity = Number(mochaDisplayQuantity.textContent);
 
 mochaItembtn.addEventListener("click", ()=> {
-    mochaQuantity += 1;
-    mochaDisplayQuantity.textContent = mochaQuantity;
+    mochaObj.quantity += 1;
+    mochaDisplayQuantity.textContent = mochaObj.quantity;
 })
 
 
 let taroDisplayQuantity = document.querySelector("#taro-quantity");
 let taroItembtn = document.querySelector("#taro-itembtn");
-let taroQuantity = Number(taroDisplayQuantity.textContent);
 
 taroItembtn.addEventListener("click", ()=> {
-    taroQuantity += 1;
-    taroDisplayQuantity.textContent = taroQuantity;
+    taroObj.quantity += 1;
+    taroDisplayQuantity.textContent = taroObj.quantity;
 })
 
 
 let matchaDisplayQuantity = document.querySelector("#matcha-quantity");
 let matchaItembtn = document.querySelector("#matcha-itembtn");
-let matchaQuantity = Number(matchaDisplayQuantity.textContent);
 
 matchaItembtn.addEventListener("click", ()=> {
-    matchaQuantity += 1;
-    matchaDisplayQuantity.textContent = matchaQuantity;
+    matchaObj.quantity += 1;
+    matchaDisplayQuantity.textContent = matchaObj.quantity;
 })
 
 let addToOrderBtn = document.querySelectorAll(".add-to-orderBtn");
