@@ -31,7 +31,7 @@ hamburgerBtn.addEventListener("click", ()=> {
 
 let hotdogBtn = document.querySelector("#hotdog-btn");
 
-hotdogBtn.addEventListener("click", ()=> {
+hotdogBtn.addEventListener("click", ()=> {  
     showSection("hotdogs");
 })
 
@@ -221,4 +221,12 @@ let cancelBtn = document.querySelector("#cancelBtn");
 
 cancelBtn.addEventListener("click" , ()=> {
     showSection("welcome");
+})
+
+
+//checkout section
+let checkoutBtn = document.querySelector("#checkout-btn");
+
+checkoutBtn.addEventListener("click", ()=> {
+    showSection("checkout-section");
 })
