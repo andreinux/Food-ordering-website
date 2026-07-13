@@ -56,6 +56,8 @@ backtoMenuBtn.forEach(button=> {
     })
 })
 
+
+
 //array of objects for each item
 let menuArray = [
 cheeseBurgerObj = {
@@ -235,6 +237,7 @@ checkoutBtn.addEventListener("click", ()=> {
 
     let item = document.createElement("p");
     item.textContent =  order.item;
+    item.classList.add("item");
     orderCard.appendChild(item);
 
     
@@ -259,4 +262,10 @@ checkoutBtn.addEventListener("click", ()=> {
     });
 })
 
-//showing orders in checkout section
+const addMorebtn = document.querySelector("#add-morebtn");
+
+addMorebtn.addEventListener("click", ()=> {
+    orderArray = [];
+    orderDisplay.textContent = "";  
+})
+

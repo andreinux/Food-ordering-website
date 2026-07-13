@@ -406,10 +406,11 @@ h3 {
     height: 80vh;
 }
 
-#order-display h2 {
+#your-order-label {
     text-align: left;
     padding: 10px;
     color: rgb(138, 14, 14);
+    margin-left: 190px;
 }
 
 
@@ -425,6 +426,10 @@ h3 {
     margin-left: 5px;
     display: flex;
     position: relative;
+    margin-top: 5px;
+}
+.item{
+    margin-left: 10px;
 }
 .quantity {
     position: absolute;
