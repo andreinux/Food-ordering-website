@@ -161,8 +161,8 @@ let LfriesDisplayQuantity = document.querySelector("#Lfries-quantity");
 let LfriesItembtn = document.querySelector("#friesLarge-itembtn");
 
 LfriesItembtn.addEventListener("click", ()=> {
-    SfriesObj.quantity += 1;
-    LfriesDisplayQuantity.textContent = SfriesObj.quantity;
+    LfriesObj.quantity += 1;
+    LfriesDisplayQuantity.textContent = LfriesObj.quantity;
 })
 
 
