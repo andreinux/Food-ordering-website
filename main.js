@@ -79,7 +79,8 @@ footLongObj ={
     item: "Footlong",
     price:49,
     quantity: 0,
-},SfriesObj ={
+},
+SfriesObj ={
     item: "Fries Small",
     price:30,
     quantity: 0,
@@ -215,9 +216,6 @@ addToOrderBtn.forEach(button => {
 
 let cancelBtn = document.querySelector("#cancelBtn");
 
-cancelBtn.addEventListener("click" , ()=> {
-    showSection("welcome");
-})
 
 let orderArray = []
 let orderDisplay = document.querySelector("#order-display");
@@ -269,3 +267,27 @@ addMorebtn.addEventListener("click", ()=> {
     orderDisplay.textContent = "";  
 })
 
+
+cancelBtn.addEventListener("click" , ()=> {
+    showSection("welcome");
+   
+    menuArray.forEach(item=> {
+        item.quantity = 0;
+    })
+
+    //reset all quantity displays
+     CBdisplayquantity.textContent = 0;
+    martiniDisplayQuantity.textContent = 0;
+    hdDisplayquantity.textContent = 0;
+    flDisplayQuantity.textContent = 0;
+    SfriesDisplayQuantity.textContent = 0;
+    LfriesDisplayQuantity.textContent = 0;
+    itDisplayQuantity.textContent = 0;
+    mochaDisplayQuantity.textContent = 0;
+    taroDisplayQuantity.textContent = 0;
+    matchaDisplayQuantity.textContent = 0;
+     
+
+    orderArray=[];
+    orderDisplay.textContent="";
+})
