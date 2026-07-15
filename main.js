@@ -58,6 +58,7 @@ backtoMenuBtn.forEach(button=> {
 
 
 
+
 //array of objects for each item
 let menuArray = [
 cheeseBurgerObj = {
@@ -212,12 +213,97 @@ addToOrderBtn.forEach(button => {
     button.addEventListener("click" , ()=> {
         showSection("categories");
     })
-})
+})  
 
 
 
 let orderArray = []
 let orderDisplay = document.querySelector("#order-display");
+
+
+
+
+//reduce quantity function
+function reduceQuantity (obj, display){
+
+   if (obj.quantity > 0){
+    obj.quantity -=1;
+  }else {
+    return;
+  }
+
+  display.textContent = obj.quantity;
+}
+
+//reduce quantity 
+const rqCheeseBurgerBtn = document.querySelector("#rq-cheeseBurger");
+
+rqCheeseBurgerBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(cheeseBurgerObj , CBdisplayquantity);
+});
+
+const rqMartiniBtn = document.querySelector("#rq-martini");
+
+rqMartiniBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(martiniObj , martiniDisplayQuantity);
+});
+
+const rqHotdogBtn = document.querySelector("#rq-hotdog");
+
+rqHotdogBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(hotdogObj , hdDisplayquantity);
+});
+
+const rqFootlongBtn = document.querySelector("#rq-footlong");
+
+rqFootlongBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(footLongObj , flDisplayQuantity);
+});
+
+const rqSfriesBtn = document.querySelector("#rq-Sfries");
+
+rqSfriesBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(SfriesObj , SfriesDisplayQuantity);
+});
+
+const rqLfriesBtn = document.querySelector("#rq-Lfries");
+
+rqLfriesBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(LfriesObj , LfriesDisplayQuantity);
+});
+
+const rqIcedTeaBtn = document.querySelector("#rq-icedtea");
+
+rqIcedTeaBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(teaObj , itDisplayQuantity);
+});
+
+const rqMochaBtn = document.querySelector("#rq-mocha");
+
+rqMochaBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(mochaObj , mochaDisplayQuantity);
+});
+
+
+const rqTaroBtn = document.querySelector("#rq-taro");
+
+rqTaroBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(taroObj , taroDisplayQuantity);
+});
+
+
+const rqMatchaBtn = document.querySelector("#rq-matcha");
+
+rqMatchaBtn.addEventListener("click" , ()=> { 
+    reduceQuantity(matchaObj , matchaDisplayQuantity);
+});
+
+
+
+
+
+
+
 
 //checkout section
 let checkoutBtn = document.querySelector("#checkout-btn");
@@ -279,7 +365,7 @@ checkoutBtn.addEventListener("click", ()=> {
     orderDisplay.appendChild(totalCard);
      totalCard.appendChild(totalAmmount);
 
-    
+
 })
 
 
@@ -323,3 +409,5 @@ cancelBtn.forEach(btn=> {
     console.log(orderArray);
 })
 });
+
+
